@@ -1,0 +1,31 @@
+# Sandbox placeholders (/dev/null mounts): never stage. Exact names only.
+# .mcp.json and the .claude/ names recur under every subdirectory a session
+# works in, so they match at any depth. Never list .claude/ wholesale.
+/.bash_profile
+/.bashrc
+/.profile
+/.zprofile
+/.zshrc
+/.gitconfig
+/.gitmodules
+/.ripgreprc
+/.idea
+/.vscode
+**/.mcp.json
+**/.claude/agents
+**/.claude/commands
+**/.claude/hooks
+**/.claude/launch.json
+**/.claude/loop.md
+**/.claude/output-styles
+**/.claude/routines
+**/.claude/scheduled_tasks.json
+**/.claude/settings.json
+**/.claude/settings.local.json
+**/.claude/skills
+**/.claude/workflows
+# Real at the root in this project: re-include each path it tracks.
+!/.claude/hooks
+!/.claude/settings.json
+# Per-host family registry, built by family-scan.sh. Never commit.
+/registry.local

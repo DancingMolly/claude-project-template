@@ -1,0 +1,6 @@
+# Files restored into context after /compact, one path per line.
+# Paths are relative to the project root. Blank lines and # comments are ignored.
+# Do not list CLAUDE.md or its @imports: they reload on their own.
+# A file over 100 lines is not pasted; the session is told to re-read it.
+TASKS.md
+README.md
